@@ -55,7 +55,7 @@ nav a.active{
     color: #b74b4b;
     border-bottom: 3px solid #b74b4b;
 }
-@media(max-width:995px){
+@media(max-width:400px){
     nav{
         position: absolute;
         display: none;
