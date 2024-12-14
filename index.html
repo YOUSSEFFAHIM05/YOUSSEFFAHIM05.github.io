@@ -8,16 +8,18 @@
     <title>Portfolio Website</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/youssef-fahim-ab6bbb339/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/YOUSSEFFAHIM05" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="https://www.instagram.com/fahim__youssef/?__pwa=1" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-        </nav>
-    </header>
+  <header>
+    <nav class="menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    </nav>
+</header>
     <section class="home">
         <div class="home-img">
             <img src="haker.jpg" alt="">
@@ -25,68 +27,57 @@
         <div class="home-content">
             <h1>Hi, It's <span>youssef</span></h1>
             <h3 class="typing-text">I'm a developpor web </h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus labore dolores esse. Odit similique doloribus tenetur doloremque, sunt commodi in ipsa repudiandae debitis deleniti blanditiis quibusdam quaerat neque asperiores ea.</p>
-            </div>
-            <a href="#" class="btn">Hire me</a>
-        </div>
-    </section>
-<div class="ligne">
- <p>\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\</p>
-</div>
-    
-    <div class="header">
-        <h1>MY SERVICES</h1>
-        <p>Resize the browser window to see the effect.</p>
-      </div>
-      
-      <div class="topnav">
-        <a href="#">Skills</a>
-        <a href="#">Education</a>
-        <a href="#">Experience</a>
-        <a href="http://127.0.0.1:5500/FOLIO/contact.html" style="float:right">Contact</a>
-      </div>
-      
-      <div class="row">
-        <div class="leftcolumn">
-          <div class="card">
-            <h2> 1  Web Development</h2>
-       
-            <div class="fakeimg" style="height:200px;">
-              <img src="web.png" alt="img">
-            </div>
-            <p>Building responsive, fast, and secure websites with modern technologies.</p>
-          </div>
-          <div class="card">
-            <h2>2  Web Design</h2>
-     
-            <div class="fakeimg" style="height:200px;">
-              <img src="image.png" alt="img">
-            </div>
-            <p>Creating visually stunning and user-friendly websites tailored to your needs.</p>
-          </div>
-          <div class="card">
-              <h2>3  Graphic Design</h2>
-             
-              <div class="fakeimg" style="height:200px;">
-                <img src="gra.png" alt="img">
-              </div>
-              <p>Designing unique logos, branding materials, and graphics to make your brand stand out.</p>
-            </div>
-        </div>
-        <div class="rightcolumn">
-          <div class="card">
-            <h2>About Me</h2>
             <p>I’m Youssef from Morocco, a student at the University of Ibn Zohr, majoring in Computer Engineering. 
               I have a strong passion for everything related to computers and technology, 
               and I enjoy learning new things in this field and applying my skills to solve technical challenges.</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
           </div>
-          <div class="card">
-            <h3>Follow Me</h3>
-            <p>you can contact me for any help or question you have</p>
-            
+          <a href="#" class="btn">Hire me</a>
+    </section>
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <div class="about-img">
+            <img src="cukur.jpeg" alt="Profile Picture">
+          </div>
+          <div class="about-text">
+            <h3>Hello, I'm Youssef!</h3>
+            <p>I'm a student in Computer Science and Engineering, passionate about coding and problem-solving. I'm always looking for new challenges and opportunities to learn and grow.</p>
+            <p>I'm proficient in a range of programming languages, including Java, Python, and C++. I'm also familiar with web development frameworks such as React and Angular.</p>
+            <p>In my free time, I enjoy reading about the latest developments in tech and working on personal projects.</p>
           </div>
         </div>
       </div>
+    </section>
+
+<section id="services" class="services">
+  
+  <div class="container">
+    <h2>My Services</h2>
+    <div class="services-content">
+      <div class="service">
+        <i class="fa-solid fa-code"></i>
+        <h3>Web Development</h3>
+        <p>I can help you build a professional website that meets your needs and exceeds your expectations.</p>
+      </div>
+      <div class="service">
+        <i class="fa-solid fa-mobile"></i>
+        <h3>Web Design</h3>
+        <p>Creating visually stunning and user-friendly websites tailored to your needs.</p>
+      </div>
+      <div class="service">
+        <i class="fa-solid fa-database"></i>
+        <h3>Graphic Design</h3>
+        <p>Designing unique logos, branding materials, and graphics to make your brand stand out.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
       <section id="contact" class="contact">
         <div class="container">
@@ -98,12 +89,79 @@
                 
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
+
+                <input type="hidden" id="browserInfo" name="browserInfo" />
                 
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
                 
                 <button type="submit" class="btn-primary">Send Message</button>
             </form>
+            <div class="qr-container">
+            <img src="qr.png" alt="QR Code">
+            </div>
+            <script>
+              // Automatically set browser information
+              document.getElementById('browserInfo').value = navigator.userAgent;
+            </script>
+           <script>
+            document.getElementById('userForm').addEventListener('submit', function (e) {
+              e.preventDefault(); // Prevent default form submission
+          
+              if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                  function (position) {
+                    const latitude = position.coords.latitude;
+                    const longitude = position.coords.longitude;
+          
+                    // Append location data to the form
+                    const formData = new FormData(document.getElementById('userForm'));
+                    formData.append('latitude', latitude);
+                    formData.append('longitude', longitude);
+          
+                    // Send form data with fetch
+                    fetch('/submit', {
+                      method: 'GIT',
+                      body: formData,
+                    })
+                      .then(response => response.text())
+                      .then(data => {
+                        console.log('Form submitted successfully:', data);
+                        alert('Form submitted with location!');
+                      })
+                      .catch(error => console.error('Error:', error));
+                  },
+                  function (error) {
+                    // Handle errors
+                    switch (error.code) {
+                      case error.PERMISSION_DENIED:
+                        alert('User denied the request for Geolocation.');
+                        break;
+                      case error.POSITION_UNAVAILABLE:
+                        alert('Location information is unavailable.');
+                        break;
+                      case error.TIMEOUT:
+                        alert('The request to get user location timed out.');
+                        break;
+                      case error.UNKNOWN_ERROR:
+                        alert('An unknown error occurred.');
+                        break;
+                    }
+                  },
+                  {
+                    enableHighAccuracy: true, // Use GPS if available
+                    timeout: 10000, // Timeout after 10 seconds
+                    maximumAge: 0, // Disable caching of results
+                  }
+                );
+              } else {
+                alert('Geolocation is not supported by this browser.');
+              }
+            });
+          </script>
+          
+            
+            
         </div>
     </section>
       
